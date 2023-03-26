@@ -2,11 +2,6 @@
 $font-heading: "Bitter", serif;
 $font-body: "Raleway", sans-serif;
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 body {
     overflow-x: hidden;
     font-family: $font-body;
@@ -37,15 +32,4 @@ canvas {
     filter: blur(10px);
     -webkit-filter: blur(10px);
     z-index: 1;
-
-    .text {
-        text-align: center;
-        color: #fff;
-    }
-
-    h1 {
-        font-size: 48px;
-        font-family: $font-heading;
-        margin-bottom: 10px;
-    }
 }
