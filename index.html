@@ -3,22 +3,1452 @@
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta http-equiv="X-UA-Compatible" content="IE=7" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>;</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
-        <link rel="stylesheet" href="assets/css/style.css" />
+        <title>Jamal Luthfi | junior Frontend Developer</title>
+        <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
-    <body>
-        <canvas id="c"></canvas>
-        <section class="hero">
+    <body class="w-screen bg-[#282c33] overflow-x-hidden">
+        <!-- back to top -->
+        <div class="fixed z-50 w-10 h-10 left-2 bottom-2 border border-solid border-[#c778dd] bg-[#282C33]">
+            <a href href="#main">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M17 15L12 10L7 15"
+                            stroke="#c778dd"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        ></path>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <!-- main Section -->
+        <section id="main" class="flex flex-col items-center justify-center">
+            <!-- nav container  -->
+            <div class="container">
+                <nav class="flex items-end justify-between w-auto pt-8 pb-2 mx-[4.5rem] text-white font-fira-code">
+                    <h1 class="font-bold font-fira-code">Jamal Luthfi</h1>
+                    <ul class="flex flex-row items-start gap-8">
+                        <li><span class="text-[#c778dd]">#</span><a href="#main">Home</a></li>
+                        <li>
+                            <span class="text-[#c778dd]">#</span><a href="#projects" class="text-[#abb2bf]">Projects</a>
+                        </li>
+                        <li><span class="text-[#c778dd]">#</span><a href="#works" class="text-[#abb2bf]">Works</a></li>
+                        <li>
+                            <span class="text-[#c778dd]">#</span><a href="#about" class="text-[#abb2bf]">About-Me</a>
+                        </li>
+                        <li>
+                            <span class="text-[#c778dd]">#</span><a href="#contact" class="text-[#abb2bf]">Contacts</a>
+                        </li>
+                    </ul>
+                    <div id="side" class="absolute top-0 inline-flex flex-col items-center gap-2 left-3">
+                        <hr class="w-px h-[7.5rem] border-0 bg-[#ABB2BF]" />
+                        <div class="flex flex-col">
+                            <a href=""
+                                ><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M15.5 6C9.69875 6 5 10.5882 5 16.2529C5 20.7899 8.00562 24.6219 12.1794 25.9804C12.7044 26.0701 12.9012 25.7625 12.9012 25.4934C12.9012 25.2499 12.8881 24.4425 12.8881 23.5838C10.25 24.058 9.5675 22.9558 9.3575 22.3791C9.23938 22.0843 8.7275 21.1743 8.28125 20.9308C7.91375 20.7386 7.38875 20.2644 8.26813 20.2516C9.095 20.2388 9.68563 20.9949 9.8825 21.3025C10.8275 22.8533 12.3369 22.4175 12.9406 22.1484C13.0325 21.4819 13.3081 21.0334 13.61 20.777C11.2737 20.5207 8.8325 19.6364 8.8325 15.7147C8.8325 14.5997 9.23938 13.6769 9.90875 12.9592C9.80375 12.7029 9.43625 11.6519 10.0138 10.2422C10.0138 10.2422 10.8931 9.97301 12.9012 11.2931C13.7413 11.0624 14.6338 10.947 15.5263 10.947C16.4188 10.947 17.3113 11.0624 18.1513 11.2931C20.1594 9.9602 21.0387 10.2422 21.0387 10.2422C21.6163 11.6519 21.2488 12.7029 21.1438 12.9592C21.8131 13.6769 22.22 14.5868 22.22 15.7147C22.22 19.6492 19.7656 20.5207 17.4294 20.777C17.81 21.0975 18.1381 21.7126 18.1381 22.6738C18.1381 24.0452 18.125 25.1474 18.125 25.4934C18.125 25.7625 18.3219 26.0829 18.8469 25.9804C20.9314 25.2935 22.7428 23.9854 24.026 22.2403C25.3092 20.4953 25.9996 18.4012 26 16.2529C26 10.5882 21.3013 6 15.5 6Z"
+                                        fill="#ABB2BF"
+                                    /></svg
+                            ></a>
+                            <a href=""
+                                ><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M15.5 6C9.69875 6 5 10.5882 5 16.2529C5 20.7899 8.00562 24.6219 12.1794 25.9804C12.7044 26.0701 12.9012 25.7625 12.9012 25.4934C12.9012 25.2499 12.8881 24.4425 12.8881 23.5838C10.25 24.058 9.5675 22.9558 9.3575 22.3791C9.23938 22.0843 8.7275 21.1743 8.28125 20.9308C7.91375 20.7386 7.38875 20.2644 8.26813 20.2516C9.095 20.2388 9.68563 20.9949 9.8825 21.3025C10.8275 22.8533 12.3369 22.4175 12.9406 22.1484C13.0325 21.4819 13.3081 21.0334 13.61 20.777C11.2737 20.5207 8.8325 19.6364 8.8325 15.7147C8.8325 14.5997 9.23938 13.6769 9.90875 12.9592C9.80375 12.7029 9.43625 11.6519 10.0138 10.2422C10.0138 10.2422 10.8931 9.97301 12.9012 11.2931C13.7413 11.0624 14.6338 10.947 15.5263 10.947C16.4188 10.947 17.3113 11.0624 18.1513 11.2931C20.1594 9.9602 21.0387 10.2422 21.0387 10.2422C21.6163 11.6519 21.2488 12.7029 21.1438 12.9592C21.8131 13.6769 22.22 14.5868 22.22 15.7147C22.22 19.6492 19.7656 20.5207 17.4294 20.777C17.81 21.0975 18.1381 21.7126 18.1381 22.6738C18.1381 24.0452 18.125 25.1474 18.125 25.4934C18.125 25.7625 18.3219 26.0829 18.8469 25.9804C20.9314 25.2935 22.7428 23.9854 24.026 22.2403C25.3092 20.4953 25.9996 18.4012 26 16.2529C26 10.5882 21.3013 6 15.5 6Z"
+                                        fill="#ABB2BF"
+                                    /></svg
+                            ></a>
+                            <a href=""
+                                ><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M15.5 6C9.69875 6 5 10.5882 5 16.2529C5 20.7899 8.00562 24.6219 12.1794 25.9804C12.7044 26.0701 12.9012 25.7625 12.9012 25.4934C12.9012 25.2499 12.8881 24.4425 12.8881 23.5838C10.25 24.058 9.5675 22.9558 9.3575 22.3791C9.23938 22.0843 8.7275 21.1743 8.28125 20.9308C7.91375 20.7386 7.38875 20.2644 8.26813 20.2516C9.095 20.2388 9.68563 20.9949 9.8825 21.3025C10.8275 22.8533 12.3369 22.4175 12.9406 22.1484C13.0325 21.4819 13.3081 21.0334 13.61 20.777C11.2737 20.5207 8.8325 19.6364 8.8325 15.7147C8.8325 14.5997 9.23938 13.6769 9.90875 12.9592C9.80375 12.7029 9.43625 11.6519 10.0138 10.2422C10.0138 10.2422 10.8931 9.97301 12.9012 11.2931C13.7413 11.0624 14.6338 10.947 15.5263 10.947C16.4188 10.947 17.3113 11.0624 18.1513 11.2931C20.1594 9.9602 21.0387 10.2422 21.0387 10.2422C21.6163 11.6519 21.2488 12.7029 21.1438 12.9592C21.8131 13.6769 22.22 14.5868 22.22 15.7147C22.22 19.6492 19.7656 20.5207 17.4294 20.777C17.81 21.0975 18.1381 21.7126 18.1381 22.6738C18.1381 24.0452 18.125 25.1474 18.125 25.4934C18.125 25.7625 18.3219 26.0829 18.8469 25.9804C20.9314 25.2935 22.7428 23.9854 24.026 22.2403C25.3092 20.4953 25.9996 18.4012 26 16.2529C26 10.5882 21.3013 6 15.5 6Z"
+                                        fill="#ABB2BF"
+                                    /></svg
+                            ></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- end nav container-->
+            <!-- main container-->
+            <div class="container mt-12">
+                <div class="flex flex-row items-center justify-between mx-[4.5rem]">
+                    <!-- left side -->
+                    <div class="w-7/12">
+                        <p class="mt-16 mb-6 text-xl font-semibold tracking-tight text-white font-fira-code">
+                            Hey! I’m Jamal 👋
+                        </p>
+                        <h1 class="mb-4 text-2xl font-semibold text-white font-fira-code">
+                            A junior <span class="text-[#c778dd]">front-end developer</span> who loves
+                            <span class="text-[#c778dd]"> Web Development</span>.
+                        </h1>
+                        <h2 class="text-lg text-[#abb2bf] font-fira-code pt-2">
+                            Welcome to the Canvas of Innovation! It's great to have you here. If you love all things
+                            art, design, and code — you're in the right place.
+                        </h2>
+                        <a
+                            href="#"
+                            class="inline-flex items-start gap-2 px-4 py-2 mt-6 text-base font-medium text-white font-fira-code border border-solid border-[#c778dd] active:text-gray-200 active:border-[#9f60b1]"
+                            >Let's Talk!!</a
+                        >
+                    </div>
+                    <!-- right side -->
+                    <div class="flex items-center justify-end w-5/12">
+                        <div class="absolute opacity-70 right-56 bottom-44">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:svgjs="http://svgjs.dev/svgjs"
+                                width="320"
+                                height="259"
+                                preserveAspectRatio="none"
+                                viewBox="0 0 320 259"
+                            >
+                                <g mask='url("#SvgjsMask1837")' fill="none">
+                                    <g mask='url("#SvgjsMask1838")'>
+                                        <path
+                                            d="M236.5 148.5L225.5 148.5L214.5 148.5L203.5 148.5M225.5 137.5L214.5 137.5L203.5 137.5L192.5 137.5L181.5 137.5M280.5 148.5L269.5 137.5L258.5 137.5L247.5 137.5L236.5 137.5M335.5 126.5L324.5 126.5L313.5 126.5L302.5 137.5L291.5 148.5L280.5 148.5L269.5 148.5L258.5 148.5L247.5 148.5L236.5 148.5L225.5 137.5L214.5 126.5"
+                                            stroke="rgba(199, 120, 221, 1)"
+                                            stroke-width="1.83"
+                                        ></path>
+                                        <path
+                                            d="M211.75 126.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM200.75 148.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM178.75 137.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM233.75 137.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0z"
+                                            fill="rgba(199, 120, 221, 1)"
+                                        ></path>
+                                        <path
+                                            d="M93.5 159.5L82.5 148.5L71.5 148.5L60.5 148.5M115.5 159.5L104.5 148.5L93.5 148.5L82.5 137.5L71.5 137.5M170.5 159.5L159.5 170.5M214.5 159.5L203.5 170.5L192.5 170.5M49.5 159.5L38.5 170.5L27.5 170.5M126.5 159.5L115.5 148.5L104.5 137.5L93.5 137.5M181.5 159.5L170.5 170.5M335.5 137.5L324.5 137.5L313.5 137.5L302.5 148.5L291.5 159.5L280.5 159.5L269.5 159.5L258.5 159.5L247.5 159.5L236.5 159.5L225.5 159.5L214.5 159.5L203.5 159.5L192.5 159.5L181.5 159.5L170.5 159.5L159.5 159.5L148.5 159.5L137.5 159.5L126.5 159.5L115.5 159.5L104.5 159.5L93.5 159.5L82.5 159.5L71.5 159.5L60.5 159.5L49.5 159.5L38.5 159.5L27.5 159.5"
+                                            stroke="rgba(159, 96, 177, 1)"
+                                            stroke-width="1.83"
+                                        ></path>
+                                        <path
+                                            d="M24.75 159.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM57.75 148.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM68.75 137.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM156.75 170.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM189.75 170.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM24.75 170.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM90.75 137.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM167.75 170.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0z"
+                                            fill="rgba(159, 96, 177, 1)"
+                                        ></path>
+                                        <path
+                                            d="M280.5 115.5L269.5 126.5L258.5 126.5M302.5 115.5L291.5 126.5L280.5 126.5M269.5 115.5L258.5 104.5M335.5 115.5L324.5 115.5L313.5 115.5L302.5 115.5L291.5 115.5L280.5 115.5L269.5 115.5L258.5 115.5L247.5 115.5"
+                                            stroke="rgba(199, 120, 221, 1)"
+                                            stroke-width="1.83"
+                                        ></path>
+                                        <path
+                                            d="M244.75 115.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM255.75 126.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM277.75 126.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM255.75 104.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0z"
+                                            fill="rgba(199, 120, 221, 1)"
+                                        ></path>
+                                        <path
+                                            d="M93.5 170.5L82.5 181.5L71.5 181.5L60.5 181.5L49.5 181.5M280.5 170.5L269.5 181.5M236.5 181.5L225.5 192.5L214.5 192.5L203.5 192.5L192.5 192.5L181.5 192.5L170.5 192.5L159.5 192.5L148.5 192.5L137.5 192.5M269.5 170.5L258.5 170.5L247.5 170.5M126.5 170.5L115.5 181.5L104.5 181.5M258.5 181.5L247.5 192.5L236.5 192.5M335.5 148.5L324.5 148.5L313.5 148.5L302.5 159.5L291.5 170.5L280.5 170.5L269.5 170.5L258.5 181.5L247.5 181.5L236.5 181.5L225.5 181.5L214.5 181.5L203.5 181.5L192.5 181.5L181.5 181.5L170.5 181.5L159.5 181.5L148.5 170.5L137.5 170.5L126.5 170.5L115.5 170.5L104.5 170.5L93.5 170.5L82.5 170.5"
+                                            stroke="rgba(159, 96, 177, 1)"
+                                            stroke-width="1.83"
+                                        ></path>
+                                        <path
+                                            d="M79.75 170.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM46.75 181.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM266.75 181.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM134.75 192.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM244.75 170.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM101.75 181.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM233.75 192.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0z"
+                                            fill="rgba(159, 96, 177, 1)"
+                                        ></path>
+                                        <path
+                                            d="M335.5 104.5L324.5 104.5L313.5 104.5L302.5 104.5L291.5 104.5"
+                                            stroke="rgba(199, 120, 221, 1)"
+                                            stroke-width="1.83"
+                                        ></path>
+                                        <path
+                                            d="M288.75 104.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0z"
+                                            fill="rgba(199, 120, 221, 1)"
+                                        ></path>
+                                        <path
+                                            d="M192.5 214.5L181.5 225.5L170.5 225.5L159.5 225.5L148.5 225.5M137.5 214.5L126.5 214.5M126.5 225.5L115.5 236.5M104.5 225.5L93.5 225.5M170.5 214.5L159.5 203.5L148.5 203.5L137.5 203.5L126.5 203.5L115.5 203.5M269.5 192.5L258.5 192.5M335.5 159.5L324.5 159.5L313.5 159.5L302.5 170.5L291.5 181.5L280.5 192.5L269.5 192.5L258.5 203.5L247.5 203.5L236.5 203.5L225.5 214.5L214.5 214.5L203.5 214.5L192.5 214.5L181.5 214.5L170.5 214.5L159.5 214.5L148.5 214.5L137.5 214.5L126.5 225.5L115.5 225.5L104.5 225.5L93.5 236.5L82.5 236.5"
+                                            stroke="rgba(199, 120, 221, 1)"
+                                            stroke-width="1.83"
+                                        ></path>
+                                        <path
+                                            d="M79.75 236.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM145.75 225.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM123.75 214.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM112.75 236.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM90.75 225.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM112.75 203.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM255.75 192.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0z"
+                                            fill="rgba(199, 120, 221, 1)"
+                                        ></path>
+                                        <path
+                                            d="M280.5 93.5L269.5 104.5M335.5 93.5L324.5 93.5L313.5 93.5L302.5 93.5L291.5 93.5L280.5 93.5L269.5 93.5L258.5 93.5"
+                                            stroke="rgba(199, 120, 221, 1)"
+                                            stroke-width="1.83"
+                                        ></path>
+                                        <path
+                                            d="M255.75 93.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM266.75 104.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0z"
+                                            fill="rgba(199, 120, 221, 1)"
+                                        ></path>
+                                        <path
+                                            d="M335.5 170.5L324.5 170.5L313.5 170.5L302.5 181.5L291.5 192.5L280.5 203.5L269.5 203.5L258.5 214.5"
+                                            stroke="rgba(199, 120, 221, 1)"
+                                            stroke-width="1.83"
+                                        ></path>
+                                        <path
+                                            d="M255.75 214.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0z"
+                                            fill="rgba(199, 120, 221, 1)"
+                                        ></path>
+                                        <path
+                                            d="M247.5 71.5L236.5 82.5L225.5 82.5L214.5 82.5M269.5 71.5L258.5 82.5L247.5 82.5L236.5 93.5M214.5 60.5L203.5 71.5L192.5 82.5L181.5 82.5M335.5 82.5L324.5 82.5L313.5 82.5L302.5 82.5L291.5 82.5L280.5 71.5L269.5 71.5L258.5 71.5L247.5 71.5L236.5 71.5L225.5 60.5L214.5 60.5L203.5 60.5L192.5 60.5"
+                                            stroke="rgba(159, 96, 177, 1)"
+                                            stroke-width="1.83"
+                                        ></path>
+                                        <path
+                                            d="M189.75 60.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM211.75 82.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM233.75 93.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM178.75 82.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0z"
+                                            fill="rgba(159, 96, 177, 1)"
+                                        ></path>
+                                        <path
+                                            d="M280.5 214.5L269.5 225.5M313.5 192.5L302.5 203.5L291.5 214.5L280.5 225.5M324.5 192.5L313.5 181.5M335.5 181.5L324.5 192.5L313.5 192.5L302.5 192.5L291.5 203.5L280.5 214.5L269.5 214.5"
+                                            stroke="rgba(199, 120, 221, 1)"
+                                            stroke-width="1.83"
+                                        ></path>
+                                        <path
+                                            d="M266.75 214.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM266.75 225.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM277.75 225.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM310.75 181.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0z"
+                                            fill="rgba(199, 120, 221, 1)"
+                                        ></path>
+                                        <path
+                                            d="M159.5 49.5L148.5 60.5L137.5 60.5L126.5 60.5M247.5 60.5L236.5 49.5L225.5 38.5L214.5 38.5M302.5 71.5L291.5 60.5L280.5 49.5L269.5 49.5L258.5 49.5M324.5 71.5L313.5 60.5L302.5 60.5L291.5 49.5L280.5 38.5M170.5 49.5L159.5 60.5L148.5 71.5L137.5 71.5L126.5 71.5L115.5 71.5L104.5 71.5M335.5 71.5L324.5 71.5L313.5 71.5L302.5 71.5L291.5 71.5L280.5 60.5L269.5 60.5L258.5 60.5L247.5 60.5L236.5 60.5L225.5 49.5L214.5 49.5L203.5 49.5L192.5 49.5L181.5 49.5L170.5 49.5L159.5 49.5L148.5 49.5L137.5 49.5L126.5 49.5L115.5 49.5"
+                                            stroke="rgba(159, 96, 177, 1)"
+                                            stroke-width="1.83"
+                                        ></path>
+                                        <path
+                                            d="M112.75 49.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM123.75 60.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM211.75 38.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM255.75 49.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM277.75 38.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0zM101.75 71.5 a2.75 2.75 0 1 0 5.5 0 a2.75 2.75 0 1 0 -5.5 0z"
+                                            fill="rgba(159, 96, 177, 1)"
+                                        ></path>
+                                    </g>
+                                </g>
+                                <defs>
+                                    <mask id="SvgjsMask1837">
+                                        <rect width="320" height="259" fill="#ffffff"></rect>
+                                    </mask>
+                                    <mask id="SvgjsMask1838">
+                                        <rect width="320" height="259" fill="white"></rect>
+                                        <path
+                                            d="M213.12 126.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM202.12 148.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM180.12 137.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM235.12 137.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0z"
+                                            fill="black"
+                                        ></path>
+                                        <path
+                                            d="M26.12 159.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM59.12 148.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM70.12 137.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM158.12 170.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM191.12 170.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM26.12 170.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM92.12 137.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM169.12 170.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0z"
+                                            fill="black"
+                                        ></path>
+                                        <path
+                                            d="M246.12 115.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM257.12 126.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM279.12 126.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM257.12 104.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0z"
+                                            fill="black"
+                                        ></path>
+                                        <path
+                                            d="M81.12 170.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM48.12 181.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM268.12 181.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM136.12 192.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM246.12 170.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM103.12 181.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM235.12 192.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0z"
+                                            fill="black"
+                                        ></path>
+                                        <path
+                                            d="M290.12 104.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0z"
+                                            fill="black"
+                                        ></path>
+                                        <path
+                                            d="M81.12 236.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM147.12 225.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM125.12 214.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM114.12 236.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM92.12 225.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM114.12 203.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM257.12 192.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0z"
+                                            fill="black"
+                                        ></path>
+                                        <path
+                                            d="M257.12 93.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM268.12 104.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0z"
+                                            fill="black"
+                                        ></path>
+                                        <path
+                                            d="M257.12 214.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0z"
+                                            fill="black"
+                                        ></path>
+                                        <path
+                                            d="M191.12 60.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM213.12 82.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM235.12 93.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM180.12 82.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0z"
+                                            fill="black"
+                                        ></path>
+                                        <path
+                                            d="M268.12 214.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM268.12 225.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM279.12 225.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM312.12 181.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0z"
+                                            fill="black"
+                                        ></path>
+                                        <path
+                                            d="M114.12 49.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM125.12 60.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM213.12 38.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM257.12 49.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM279.12 38.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0zM103.12 71.5 a1.38 1.38 0 1 0 2.76 0 a1.38 1.38 0 1 0 -2.76 0z"
+                                            fill="black"
+                                        ></path>
+                                    </mask>
+                                </defs>
+                            </svg>
+                        </div>
+                        <img
+                            class="relative -right-6 w-[20.25rem] h-[20.25rem]"
+                            src="./assets/img/Mc.png"
+                            alt="illustration"
+                        />
+                        <div
+                            class="absolute flex flex-row items-center gap-2 p-2 h-9 w-[22rem] border border-solid border-[#ABB2BF] bg-[#282C33] bottom-36"
+                        >
+                            <div class="h-4 w-4 bg-[#c778dd] border border-solid border-[#c778dd]"></div>
+                            <p class="text-[#ABB2BF] font-fira-code">
+                                Currently working on <span class="text-white">Portfolio</span>
+                            </p>
+                        </div>
+                        <div class="absolute bottom-56 z-[3]">
+                            <svg
+                                width="74"
+                                height="74"
+                                viewBox="0 0 84 84"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <circle cx="2" cy="2" r="2" fill="#ABB2BF" />
+                                <circle cx="22" cy="2" r="2" fill="#ABB2BF" />
+                                <circle cx="42" cy="2" r="2" fill="#ABB2BF" />
+                                <circle cx="62" cy="2" r="2" fill="#ABB2BF" />
+                                <circle cx="82" cy="2" r="2" fill="#ABB2BF" />
+                                <circle cx="2" cy="22" r="2" fill="#ABB2BF" />
+                                <circle cx="22" cy="22" r="2" fill="#ABB2BF" />
+                                <circle cx="42" cy="22" r="2" fill="#ABB2BF" />
+                                <circle cx="62" cy="22" r="2" fill="#ABB2BF" />
+                                <circle cx="82" cy="22" r="2" fill="#ABB2BF" />
+                                <circle cx="2" cy="42" r="2" fill="#ABB2BF" />
+                                <circle cx="22" cy="42" r="2" fill="#ABB2BF" />
+                                <circle cx="42" cy="42" r="2" fill="#ABB2BF" />
+                                <circle cx="62" cy="42" r="2" fill="#ABB2BF" />
+                                <circle cx="82" cy="42" r="2" fill="#ABB2BF" />
+                                <circle cx="2" cy="62" r="2" fill="#ABB2BF" />
+                                <circle cx="22" cy="62" r="2" fill="#ABB2BF" />
+                                <circle cx="42" cy="62" r="2" fill="#ABB2BF" />
+                                <circle cx="62" cy="62" r="2" fill="#ABB2BF" />
+                                <circle cx="82" cy="62" r="2" fill="#ABB2BF" />
+                                <circle cx="2" cy="82" r="2" fill="#ABB2BF" />
+                                <circle cx="22" cy="82" r="2" fill="#ABB2BF" />
+                                <circle cx="42" cy="82" r="2" fill="#ABB2BF" />
+                                <circle cx="62" cy="82" r="2" fill="#ABB2BF" />
+                                <circle cx="82" cy="82" r="2" fill="#ABB2BF" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="quotes" class="absolute inline-flex -bottom-[4.5rem]">
+                <div class="absolute px-2 py-1 -top-[14px] left-5 bg-[#282C33]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="21" viewBox="0 0 26 21" fill="none">
+                        <path
+                            d="M10.56 15.616C10.56 17.0453 10.0373 18.2507 8.992 19.232C7.968 20.2133 6.72 20.704 5.248 20.704C3.73333 20.704 2.47467 20.2133 1.472 19.232C0.490667 18.2507 0 17.0453 0 15.616C0 14.9333 0.096 14.208 0.288 13.44C0.48 12.672 0.864 11.68 1.44 10.464L6.4 0H11.2L8.544 11.584C9.14133 12.0107 9.62133 12.576 9.984 13.28C10.368 13.9627 10.56 14.7413 10.56 15.616ZM24.8 15.616C24.8 17.0453 24.2773 18.2507 23.232 19.232C22.1867 20.2133 20.9387 20.704 19.488 20.704C18.016 20.704 16.768 20.2133 15.744 19.232C14.7413 18.2507 14.24 17.0453 14.24 15.616C14.24 14.9333 14.336 14.208 14.528 13.44C14.72 12.672 15.1147 11.68 15.712 10.464L20.704 0H25.472L22.784 11.584C23.4027 12.0107 23.8933 12.576 24.256 13.28C24.6187 13.9627 24.8 14.7413 24.8 15.616Z"
+                            fill="#ABB2BF"
+                        />
+                    </svg>
+                </div>
+                <div class="gap-2 p-7 border border-solid border-[#ABB2BF] bg-[#282C33]">
+                    <h3 class="text-xl italic font-medium text-white font-fira-code">
+                        With great power comes great electricity bill
+                    </h3>
+                </div>
+                <div
+                    class="absolute -bottom-[57px] right-0 flex items-center gap-2 p-4 border border-solid border-[#ABB2BF] bg-[#282C33]"
+                >
+                    <p class="text-base text-white font-fira-code">- DR. Who</p>
+                </div>
+                <div class="absolute px-2 py-1 -bottom-[14px] right-5 bg-[#282C33]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="21" viewBox="0 0 26 21" fill="none">
+                        <path
+                            d="M10.56 15.616C10.56 17.0453 10.0373 18.2507 8.992 19.232C7.968 20.2133 6.72 20.704 5.248 20.704C3.73333 20.704 2.47467 20.2133 1.472 19.232C0.490667 18.2507 0 17.0453 0 15.616C0 14.9333 0.096 14.208 0.288 13.44C0.48 12.672 0.864 11.68 1.44 10.464L6.4 0H11.2L8.544 11.584C9.14133 12.0107 9.62133 12.576 9.984 13.28C10.368 13.9627 10.56 14.7413 10.56 15.616ZM24.8 15.616C24.8 17.0453 24.2773 18.2507 23.232 19.232C22.1867 20.2133 20.9387 20.704 19.488 20.704C18.016 20.704 16.768 20.2133 15.744 19.232C14.7413 18.2507 14.24 17.0453 14.24 15.616C14.24 14.9333 14.336 14.208 14.528 13.44C14.72 12.672 15.1147 11.68 15.712 10.464L20.704 0H25.472L22.784 11.584C23.4027 12.0107 23.8933 12.576 24.256 13.28C24.6187 13.9627 24.8 14.7413 24.8 15.616Z"
+                            fill="#ABB2BF"
+                        />
+                    </svg>
+                </div>
+                <div class="absolute -right-96">
+                    <svg width="82" height="91" viewBox="0 0 82 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="90" height="90" stroke="#ABB2BF" />
+                    </svg>
+                </div>
+            </div>
         </section>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="/assets/js/script.js"></script>
+        <!-- Project Section -->
+        <section id="projects" class="flex flex-col items-center justify-center mt-[28rem]">
+            <!-- projects container -->
+            <div class="container">
+                <!-- decoration -->
+                <div class="absolute -left-8 top-[114rem]">
+                    <svg width="78" height="155" viewBox="0 0 78 155" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="-76.5" y="0.5" width="154" height="154" stroke="#ABB2BF" />
+                    </svg>
+                </div>
+                <div class="absolute -right-7 top-[85rem]">
+                    <svg width="74" height="74" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="2" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="2" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="2" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="2" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="2" cy="82" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="82" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="82" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="82" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="82" r="2" fill="#ABB2BF" />
+                    </svg>
+                </div>
+                <!-- projects title -->
+                <div class="flex flex-row items-center justify-between mx-[4.5rem] gap-4">
+                    <h2 class="text-2xl font-semibold text-white font-fira-code">
+                        <span class="text-[#c778dd]">#</span>Projects
+                    </h2>
+                    <hr class="w-full h-px border-0 bg-[#c778dd]" />
+                </div>
+                <!-- grid-project -->
+                <div class="flex flex-col items-center justify-between mx-[4.5rem] mt-10">
+                    <h4 class="mb-5 text-lg font-medium text-white font-fira-code">
+                        .<span class="text-[#c778dd]">/</span>Completed-Projects
+                    </h4>
+                    <div class="flex items-center justify-center w-full">
+                        <div class="grid grid-cols-6 gap-4">
+                            <div class="col-span-2 w-72 h-96 border border-solid border-[#ABB2BF]">
+                                <div class="w-full h-44 border-b border-solid border-[#ABB2BF]">
+                                    <img
+                                        class="w-[95%] h-[92%] m-auto my-2 border border-solid border-[#ABB2BF]"
+                                        src="./assets/img/project.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div
+                                    class="flex items-start w-full p-2 self-stretch gap-2 border-b border-solid border-[#ABB2BF] text-[#abb2bf] font-fira-code"
+                                >
+                                    <p>HTML</p>
+                                    <p>Tailwind</p>
+                                </div>
+                                <div class="flex flex-col items-start w-full gap-4 p-4 font-fira-code">
+                                    <h3 class="text-2xl font-medium text-white">Portfolio</h3>
+                                    <p class="font-fira-code text-[#abb2bf]">projects description</p>
+                                </div>
+                                <div class="flex flex-row items-center justify-around w-full font-fira-code">
+                                    <a
+                                        href="#"
+                                        class="font-medium gap-2 px-4 py-2 border border-solid border-[#C778DD] text-white"
+                                        >Live <~></a
+                                    >
+                                    <a
+                                        href="#"
+                                        class="font-medium gap-2 px-4 py-2 border border-solid border-[#ABB2BF] text-[#abb2bf]"
+                                        >Code >=</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-span-2 w-72 h-96 border border-solid border-[#ABB2BF]">
+                                <div class="w-full h-44 border-b border-solid border-[#ABB2BF]">
+                                    <img
+                                        class="w-[95%] h-[92%] m-auto my-2 border border-solid border-[#ABB2BF]"
+                                        src="./assets/img/project.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div
+                                    class="flex items-start w-full p-2 self-stretch gap-2 border-b border-solid border-[#ABB2BF] text-[#abb2bf] font-fira-code"
+                                >
+                                    <p>HTML</p>
+                                    <p>Tailwind</p>
+                                </div>
+                                <div class="flex flex-col items-start w-full gap-4 p-4 font-fira-code">
+                                    <h3 class="text-2xl font-medium text-white">Portfolio</h3>
+                                    <p class="font-fira-code text-[#abb2bf]">projects description</p>
+                                </div>
+                                <div class="flex flex-row items-center justify-around w-full font-fira-code">
+                                    <a
+                                        href="#"
+                                        class="font-medium gap-2 px-4 py-2 border border-solid border-[#C778DD] text-white"
+                                        >Live <~></a
+                                    >
+                                    <a
+                                        href="#"
+                                        class="font-medium gap-2 px-4 py-2 border border-solid border-[#ABB2BF] text-[#abb2bf]"
+                                        >Code >=</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-span-2 w-72 h-96 border border-solid border-[#ABB2BF]">
+                                <div class="w-full h-44 border-b border-solid border-[#ABB2BF]">
+                                    <img
+                                        class="w-[95%] h-[92%] m-auto my-2 border border-solid border-[#ABB2BF]"
+                                        src="./assets/img/project.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div
+                                    class="flex items-start w-full p-2 self-stretch gap-2 border-b border-solid border-[#ABB2BF] text-[#abb2bf] font-fira-code"
+                                >
+                                    <p>HTML</p>
+                                    <p>Tailwind</p>
+                                </div>
+                                <div class="flex flex-col items-start w-full gap-4 p-4 font-fira-code">
+                                    <h3 class="text-2xl font-medium text-white">Portfolio</h3>
+                                    <p class="font-fira-code text-[#abb2bf]">projects description</p>
+                                </div>
+                                <div class="flex flex-row items-center justify-around w-full font-fira-code">
+                                    <a
+                                        href="#"
+                                        class="font-medium gap-2 px-4 py-2 border border-solid border-[#C778DD] text-white"
+                                        >Live <~></a
+                                    >
+                                    <a
+                                        href="#"
+                                        class="font-medium gap-2 px-4 py-2 border border-solid border-[#ABB2BF] text-[#abb2bf]"
+                                        >Code >=</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-span-2 w-72 h-96 border border-solid border-[#ABB2BF]">
+                                <div class="w-full h-44 border-b border-solid border-[#ABB2BF]">
+                                    <img
+                                        class="w-[95%] h-[92%] m-auto my-2 border border-solid border-[#ABB2BF]"
+                                        src="./assets/img/project.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div
+                                    class="flex items-start w-full p-2 self-stretch gap-2 border-b border-solid border-[#ABB2BF] text-[#abb2bf] font-fira-code"
+                                >
+                                    <p>HTML</p>
+                                    <p>Tailwind</p>
+                                </div>
+                                <div class="flex flex-col items-start w-full gap-4 p-4 font-fira-code">
+                                    <h3 class="text-2xl font-medium text-white">Portfolio</h3>
+                                    <p class="font-fira-code text-[#abb2bf]">projects description</p>
+                                </div>
+                                <div class="flex flex-row items-center justify-around w-full font-fira-code">
+                                    <a
+                                        href="#"
+                                        class="font-medium gap-2 px-4 py-2 border border-solid border-[#C778DD] text-white"
+                                        >Live <~></a
+                                    >
+                                    <a
+                                        href="#"
+                                        class="font-medium gap-2 px-4 py-2 border border-solid border-[#ABB2BF] text-[#abb2bf]"
+                                        >Code >=</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-span-2 w-72 h-96 border border-solid border-[#ABB2BF]">
+                                <div class="w-full h-44 border-b border-solid border-[#ABB2BF]">
+                                    <img
+                                        class="w-[95%] h-[92%] m-auto my-2 border border-solid border-[#ABB2BF]"
+                                        src="./assets/img/project.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div
+                                    class="flex items-start w-full p-2 self-stretch gap-2 border-b border-solid border-[#ABB2BF] text-[#abb2bf] font-fira-code"
+                                >
+                                    <p>HTML</p>
+                                    <p>Tailwind</p>
+                                </div>
+                                <div class="flex flex-col items-start w-full gap-4 p-4 font-fira-code">
+                                    <h3 class="text-2xl font-medium text-white">Portfolio</h3>
+                                    <p class="font-fira-code text-[#abb2bf]">projects description</p>
+                                </div>
+                                <div class="flex flex-row items-center justify-around w-full font-fira-code">
+                                    <a
+                                        href="#"
+                                        class="font-medium gap-2 px-4 py-2 border border-solid border-[#C778DD] text-white"
+                                        >Live <~></a
+                                    >
+                                    <a
+                                        href="#"
+                                        class="font-medium gap-2 px-4 py-2 border border-solid border-[#ABB2BF] text-[#abb2bf]"
+                                        >Code >=</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-span-2 w-72 h-96 border border-solid border-[#ABB2BF]">
+                                <div class="w-full h-44 border-b border-solid border-[#ABB2BF]">
+                                    <img
+                                        class="w-[95%] h-[92%] m-auto my-2 border border-solid border-[#ABB2BF]"
+                                        src="./assets/img/project.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div
+                                    class="flex items-start w-full p-2 self-stretch gap-2 border-b border-solid border-[#ABB2BF] text-[#abb2bf] font-fira-code"
+                                >
+                                    <p>HTML</p>
+                                    <p>Tailwind</p>
+                                </div>
+                                <div class="flex flex-col items-start w-full gap-4 p-4 font-fira-code">
+                                    <h3 class="text-2xl font-medium text-white">Portfolio</h3>
+                                    <p class="font-fira-code text-[#abb2bf]">projects description</p>
+                                </div>
+                                <div class="flex flex-row items-center justify-around w-full font-fira-code">
+                                    <a
+                                        href="#"
+                                        class="font-medium gap-2 px-4 py-2 border border-solid border-[#C778DD] text-white"
+                                        >Live <~></a
+                                    >
+                                    <a
+                                        href="#"
+                                        class="font-medium gap-2 px-4 py-2 border border-solid border-[#ABB2BF] text-[#abb2bf]"
+                                        >Code >=</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-between mx-[4.5rem] mt-10">
+                    <h4 class="mb-5 text-lg font-medium text-white font-fira-code">
+                        .<span class="text-[#c778dd]">/</span>Small-Projects
+                    </h4>
+                    <div class="flex items-center justify-center w-full">
+                        <div class="grid grid-cols-6 gap-4">
+                            <div class="col-span-2 w-72 h-52 border border-solid border-[#ABB2BF]">
+                                <div
+                                    class="flex items-start w-full p-2 self-stretch gap-2 border-b border-solid border-[#ABB2BF] text-[#abb2bf] font-fira-code"
+                                >
+                                    <p>HTML</p>
+                                    <p>Tailwind</p>
+                                </div>
+                                <div class="flex flex-col items-start w-full gap-4 p-4 font-fira-code">
+                                    <h3 class="text-2xl font-medium text-white">Portfolio</h3>
+                                    <p class="font-fira-code text-[#abb2bf]">projects description</p>
+                                </div>
+                                <div class="flex flex-row justify-end w-full pr-4 font-fira-code">
+                                    <a
+                                        href="#"
+                                        class="font-medium gap-2 px-4 py-2 border border-solid border-[#abb2bf] text-white"
+                                        >Code <~></a
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-span-2 w-72 h-52 border border-solid border-[#ABB2BF]">
+                                <div
+                                    class="flex items-start w-full p-2 self-stretch gap-2 border-b border-solid border-[#ABB2BF] text-[#abb2bf] font-fira-code"
+                                >
+                                    <p>HTML</p>
+                                    <p>Tailwind</p>
+                                </div>
+                                <div class="flex flex-col items-start w-full gap-4 p-4 font-fira-code">
+                                    <h3 class="text-2xl font-medium text-white">Portfolio</h3>
+                                    <p class="font-fira-code text-[#abb2bf]">projects description</p>
+                                </div>
+                                <div class="flex flex-row justify-end w-full pr-4 font-fira-code">
+                                    <a
+                                        href="#"
+                                        class="font-medium gap-2 px-4 py-2 border border-solid border-[#abb2bf] text-white"
+                                        >Code <~></a
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-span-2 w-72 h-52 border border-solid border-[#ABB2BF]">
+                                <div
+                                    class="flex items-start w-full p-2 self-stretch gap-2 border-b border-solid border-[#ABB2BF] text-[#abb2bf] font-fira-code"
+                                >
+                                    <p>HTML</p>
+                                    <p>Tailwind</p>
+                                </div>
+                                <div class="flex flex-col items-start w-full gap-4 p-4 font-fira-code">
+                                    <h3 class="text-2xl font-medium text-white">Portfolio</h3>
+                                    <p class="font-fira-code text-[#abb2bf]">projects description</p>
+                                </div>
+                                <div class="flex flex-row justify-end w-full pr-4 font-fira-code">
+                                    <a
+                                        href="#"
+                                        class="font-medium gap-2 px-4 py-2 border border-solid border-[#abb2bf] text-white"
+                                        >Code <~></a
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-span-2 w-72 h-52 border border-solid border-[#ABB2BF]">
+                                <div
+                                    class="flex items-start w-full p-2 self-stretch gap-2 border-b border-solid border-[#ABB2BF] text-[#abb2bf] font-fira-code"
+                                >
+                                    <p>HTML</p>
+                                    <p>Tailwind</p>
+                                </div>
+                                <div class="flex flex-col items-start w-full gap-4 p-4 font-fira-code">
+                                    <h3 class="text-2xl font-medium text-white">Portfolio</h3>
+                                    <p class="font-fira-code text-[#abb2bf]">projects description</p>
+                                </div>
+                                <div class="flex flex-row justify-end w-full pr-4 font-fira-code">
+                                    <a
+                                        href="#"
+                                        class="font-medium gap-2 px-4 py-2 border border-solid border-[#abb2bf] text-white"
+                                        >Code <~></a
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-span-2 w-72 h-52 border border-solid border-[#ABB2BF]">
+                                <div
+                                    class="flex items-start w-full p-2 self-stretch gap-2 border-b border-solid border-[#ABB2BF] text-[#abb2bf] font-fira-code"
+                                >
+                                    <p>HTML</p>
+                                    <p>Tailwind</p>
+                                </div>
+                                <div class="flex flex-col items-start w-full gap-4 p-4 font-fira-code">
+                                    <h3 class="text-2xl font-medium text-white">Portfolio</h3>
+                                    <p class="font-fira-code text-[#abb2bf]">projects description</p>
+                                </div>
+                                <div class="flex flex-row justify-end w-full pr-4 font-fira-code">
+                                    <a
+                                        href="#"
+                                        class="font-medium gap-2 px-4 py-2 border border-solid border-[#abb2bf] text-white"
+                                        >Code <~></a
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-span-2 w-72 h-52 border border-solid border-[#ABB2BF]">
+                                <div
+                                    class="flex items-start w-full p-2 self-stretch gap-2 border-b border-solid border-[#ABB2BF] text-[#abb2bf] font-fira-code"
+                                >
+                                    <p>HTML</p>
+                                    <p>Tailwind</p>
+                                </div>
+                                <div class="flex flex-col items-start w-full gap-4 p-4 font-fira-code">
+                                    <h3 class="text-2xl font-medium text-white">Portfolio</h3>
+                                    <p class="font-fira-code text-[#abb2bf]">projects description</p>
+                                </div>
+                                <div class="flex flex-row justify-end w-full pr-4 font-fira-code">
+                                    <a
+                                        href="#"
+                                        class="font-medium gap-2 px-4 py-2 border border-solid border-[#abb2bf] text-white"
+                                        >Code <~></a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Works Section -->
+        <section id="works" class="flex flex-col items-center justify-center mt-[10rem]">
+            <!-- works container -->
+            <div class="container">
+                <!-- decoration -->
+                <div class="absolute -right-16 top-[153rem]">
+                    <svg width="82" height="91" viewBox="0 0 82 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="90" height="90" stroke="#ABB2BF" />
+                    </svg>
+                </div>
+                <div class="absolute -left-4 top-[210rem]">
+                    <svg width="74" height="74" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="2" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="2" r="2" fill="#ABB2BF" />
+                        <circle cx="2" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="22" r="2" fill="#ABB2BF" />
+                        <circle cx="2" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="42" r="2" fill="#ABB2BF" />
+                        <circle cx="2" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="62" r="2" fill="#ABB2BF" />
+                        <circle cx="2" cy="82" r="2" fill="#ABB2BF" />
+                        <circle cx="22" cy="82" r="2" fill="#ABB2BF" />
+                        <circle cx="42" cy="82" r="2" fill="#ABB2BF" />
+                        <circle cx="62" cy="82" r="2" fill="#ABB2BF" />
+                        <circle cx="82" cy="82" r="2" fill="#ABB2BF" />
+                    </svg>
+                </div>
+                <!-- works title -->
+                <div class="flex flex-row items-center justify-between mx-[4.5rem] gap-4">
+                    <h2 class="text-2xl font-semibold text-white font-fira-code">
+                        <span class="text-[#c778dd]">#</span>Experience
+                    </h2>
+                    <hr class="w-full h-px border-0 bg-[#c778dd]" />
+                </div>
+                <div
+                    class="flex flex-row items-center justify-between mx-[4.5rem] h-[66rem] mt-10 bg-[#2B343A] rounded-tl-3xl rounded-br-3xl"
+                >
+                    <div class="flex flex-col items-center justify-center w-full h-full">
+                        <hr class="w-px h-full my-6 border-0 bg-[#ABB2BF]" />
+                    </div>
+                    <!-- kiri -->
+                    <div class="absolute flex flex-row items-center top-[162rem] font-fira-code">
+                        <!-- box -->
+                        <div class="ml-12 mr-4 p-6 bg-[#333C42] rounded-sm w-[26rem]">
+                            <h3 class="mb-1 text-xl font-semibold text-white">Lorem, ipsum dolor.</h3>
+                            <div class="flex flex-row items-center gap-4 bg-[#2B343A] px-1 py-2 rounded-sm">
+                                <div class="flex flex-row items-center gap-2 ml-2">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 16 16"
+                                        style="fill: #53565c"
+                                    >
+                                        <path
+                                            d="M1.365 9.777a0.661 0.661 0 0 0 0.311 0.404l1.273 0.736v1.465a0.667 0.667 0 0 0 0.667 0.667h1.465l0.736 1.273a0.668 0.668 0 0 0 0.911 0.244l1.272 -0.733 1.273 0.736a0.668 0.668 0 0 0 0.911 -0.244l0.735 -1.273h1.465a0.667 0.667 0 0 0 0.667 -0.667V10.92l1.273 -0.736a0.665 0.665 0 0 0 0.244 -0.911L13.833 8l0.736 -1.273a0.667 0.667 0 0 0 -0.244 -0.911l-1.273 -0.736V3.615a0.667 0.667 0 0 0 -0.667 -0.667H10.92l-0.735 -1.273a0.669 0.669 0 0 0 -0.404 -0.311 0.663 0.663 0 0 0 -0.507 0.067L8 2.167l-1.273 -0.736a0.665 0.665 0 0 0 -0.911 0.243l-0.736 1.273H3.615a0.667 0.667 0 0 0 -0.667 0.667v1.467l-1.273 0.736a0.667 0.667 0 0 0 -0.243 0.911L2.167 8l-0.736 1.273a0.668 0.668 0 0 0 -0.067 0.505z"
+                                        />
+                                    </svg>
+
+                                    <p class="text-xs font-medium text-white">Frontend</p>
+                                </div>
+                                <div class="flex flex-row items-center gap-2">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 16 16"
+                                        style="fill: #53565c"
+                                    >
+                                        <path
+                                            d="M2 4v9.333a1.333 1.333 0 0 0 1.333 1.333h9.333a1.333 1.333 0 0 0 1.333 -1.333V4a1.333 1.333 0 0 0 -1.333 -1.333h-1.333V1.333h-1.333v1.333H6V1.333H4.667v1.333H3.333a1.333 1.333 0 0 0 -1.333 1.333zm10.667 9.333H3.333V5.333h9.333z"
+                                        />
+                                    </svg>
+
+                                    <p class="text-xs font-medium text-white">2021 - Present</p>
+                                </div>
+                            </div>
+                            <p class="text-[#abb2bf] text-base my-4 leading-relaxed">
+                                Working alongside the designer team implementing the designs, also developing custom
+                                solutions to address team necessities.
+                            </p>
+                            <ul class="flex flex-wrap justify-center text-xs">
+                                <li
+                                    class="bg-[#40484D] rounded-sm inline-block py-1 px-2 my-1 mx-[2px] text-[#abb2bf] text-center flex-grow"
+                                >
+                                    HTML5
+                                </li>
+                                <li
+                                    class="bg-[#40484D] rounded-sm inline-block py-1 px-2 my-1 mx-[2px] text-[#abb2bf] text-center flex-grow"
+                                >
+                                    CSS3
+                                </li>
+                                <li
+                                    class="bg-[#40484D] rounded-sm inline-block py-1 px-2 my-1 mx-[2px] text-[#abb2bf] text-center flex-grow"
+                                >
+                                    JavaScript
+                                </li>
+                                <li
+                                    class="bg-[#40484D] rounded-sm inline-block py-1 px-2 my-1 mx-[2px] text-[#abb2bf] text-center flex-grow"
+                                >
+                                    Wordpress
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- line -->
+                        <div class="inline-flex flex-col items-center gap-2">
+                            <div class="inline-flex flex-row items-center top-[165rem] left-[35.75rem]">
+                                <hr class="h-px w-[4.5rem] border-0 bg-[#ABB2BF]" />
+                                <div class="flex flex-col bg-[#2B343A]">
+                                    <svg width="30" height="30" viewBox="0 0 40 40">
+                                        <circle
+                                            cx="20"
+                                            cy="20"
+                                            r="10"
+                                            stroke="#c778dd"
+                                            stroke-width="4"
+                                            fill="#ffffff"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- kanan -->
+                    <div class="absolute flex flex-row items-center right-[6.2rem] top-[183rem] font-fira-code">
+                        <!-- line -->
+                        <div class="inline-flex flex-col items-center gap-2">
+                            <div class="inline-flex flex-row items-center top-[165rem] left-[35.75rem]">
+                                <div class="flex flex-col bg-[#2B343A]">
+                                    <svg width="30" height="30" viewBox="0 0 40 40">
+                                        <circle
+                                            cx="20"
+                                            cy="20"
+                                            r="10"
+                                            stroke="#c778dd"
+                                            stroke-width="4"
+                                            fill="#ffffff"
+                                        />
+                                    </svg>
+                                </div>
+                                <hr class="h-px w-[4.5rem] border-0 bg-[#ABB2BF]" />
+                            </div>
+                        </div>
+                        <!-- box -->
+                        <div class="mr-12 ml-4 p-6 bg-[#333C42] rounded-sm w-[26rem]">
+                            <h3 class="mb-1 text-xl font-semibold text-white">Lorem, ipsum dolor.</h3>
+                            <div class="flex flex-row items-center gap-4 bg-[#2B343A] px-1 py-2 rounded-sm">
+                                <div class="flex flex-row items-center gap-2 ml-2">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 16 16"
+                                        style="fill: #53565c"
+                                    >
+                                        <path
+                                            d="M1.365 9.777a0.661 0.661 0 0 0 0.311 0.404l1.273 0.736v1.465a0.667 0.667 0 0 0 0.667 0.667h1.465l0.736 1.273a0.668 0.668 0 0 0 0.911 0.244l1.272 -0.733 1.273 0.736a0.668 0.668 0 0 0 0.911 -0.244l0.735 -1.273h1.465a0.667 0.667 0 0 0 0.667 -0.667V10.92l1.273 -0.736a0.665 0.665 0 0 0 0.244 -0.911L13.833 8l0.736 -1.273a0.667 0.667 0 0 0 -0.244 -0.911l-1.273 -0.736V3.615a0.667 0.667 0 0 0 -0.667 -0.667H10.92l-0.735 -1.273a0.669 0.669 0 0 0 -0.404 -0.311 0.663 0.663 0 0 0 -0.507 0.067L8 2.167l-1.273 -0.736a0.665 0.665 0 0 0 -0.911 0.243l-0.736 1.273H3.615a0.667 0.667 0 0 0 -0.667 0.667v1.467l-1.273 0.736a0.667 0.667 0 0 0 -0.243 0.911L2.167 8l-0.736 1.273a0.668 0.668 0 0 0 -0.067 0.505z"
+                                        />
+                                    </svg>
+                                    <p class="text-xs font-medium text-white">Frontend</p>
+                                </div>
+                                <div class="flex flex-row items-center gap-2">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 16 16"
+                                        style="fill: #53565c"
+                                    >
+                                        <path
+                                            d="M2 4v9.333a1.333 1.333 0 0 0 1.333 1.333h9.333a1.333 1.333 0 0 0 1.333 -1.333V4a1.333 1.333 0 0 0 -1.333 -1.333h-1.333V1.333h-1.333v1.333H6V1.333H4.667v1.333H3.333a1.333 1.333 0 0 0 -1.333 1.333zm10.667 9.333H3.333V5.333h9.333z"
+                                        />
+                                    </svg>
+                                    <p class="text-xs font-medium text-white">2021 - Present</p>
+                                </div>
+                            </div>
+                            <p class="text-[#abb2bf] text-base my-4 leading-relaxed">
+                                Working alongside the designer team implementing the designs, also developing custom
+                                solutions to address team necessities.
+                            </p>
+                            <ul class="flex flex-wrap justify-center text-xs">
+                                <li
+                                    class="bg-[#40484D] rounded-sm inline-block py-1 px-2 my-1 mx-[2px] text-[#abb2bf] text-center flex-grow"
+                                >
+                                    HTML5
+                                </li>
+                                <li
+                                    class="bg-[#40484D] rounded-sm inline-block py-1 px-2 my-1 mx-[2px] text-[#abb2bf] text-center flex-grow"
+                                >
+                                    CSS3
+                                </li>
+                                <li
+                                    class="bg-[#40484D] rounded-sm inline-block py-1 px-2 my-1 mx-[2px] text-[#abb2bf] text-center flex-grow"
+                                >
+                                    JavaScript
+                                </li>
+                                <li
+                                    class="bg-[#40484D] rounded-sm inline-block py-1 px-2 my-1 mx-[2px] text-[#abb2bf] text-center flex-grow"
+                                >
+                                    Wordpress
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- kiri -->
+                    <div class="absolute flex flex-row items-center top-[204rem] font-fira-code">
+                        <!-- box -->
+                        <div class="ml-12 mr-4 p-6 bg-[#333C42] rounded-sm w-[26rem]">
+                            <h3 class="mb-1 text-xl font-semibold text-white">Lorem, ipsum dolor.</h3>
+                            <div class="flex flex-row items-center gap-4 bg-[#2B343A] px-1 py-2 rounded-sm">
+                                <div class="flex flex-row items-center gap-2 ml-2">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 16 16"
+                                        style="fill: #53565c"
+                                    >
+                                        <path
+                                            d="M1.365 9.777a0.661 0.661 0 0 0 0.311 0.404l1.273 0.736v1.465a0.667 0.667 0 0 0 0.667 0.667h1.465l0.736 1.273a0.668 0.668 0 0 0 0.911 0.244l1.272 -0.733 1.273 0.736a0.668 0.668 0 0 0 0.911 -0.244l0.735 -1.273h1.465a0.667 0.667 0 0 0 0.667 -0.667V10.92l1.273 -0.736a0.665 0.665 0 0 0 0.244 -0.911L13.833 8l0.736 -1.273a0.667 0.667 0 0 0 -0.244 -0.911l-1.273 -0.736V3.615a0.667 0.667 0 0 0 -0.667 -0.667H10.92l-0.735 -1.273a0.669 0.669 0 0 0 -0.404 -0.311 0.663 0.663 0 0 0 -0.507 0.067L8 2.167l-1.273 -0.736a0.665 0.665 0 0 0 -0.911 0.243l-0.736 1.273H3.615a0.667 0.667 0 0 0 -0.667 0.667v1.467l-1.273 0.736a0.667 0.667 0 0 0 -0.243 0.911L2.167 8l-0.736 1.273a0.668 0.668 0 0 0 -0.067 0.505z"
+                                        />
+                                    </svg>
+                                    <p class="text-xs font-medium text-white">Frontend</p>
+                                </div>
+                                <div class="flex flex-row items-center gap-2">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 16 16"
+                                        style="fill: #53565c"
+                                    >
+                                        <path
+                                            d="M2 4v9.333a1.333 1.333 0 0 0 1.333 1.333h9.333a1.333 1.333 0 0 0 1.333 -1.333V4a1.333 1.333 0 0 0 -1.333 -1.333h-1.333V1.333h-1.333v1.333H6V1.333H4.667v1.333H3.333a1.333 1.333 0 0 0 -1.333 1.333zm10.667 9.333H3.333V5.333h9.333z"
+                                        />
+                                    </svg>
+                                    <p class="text-xs font-medium text-white">2021 - Present</p>
+                                </div>
+                            </div>
+                            <p class="text-[#abb2bf] text-base my-4 leading-relaxed">
+                                Working alongside the designer team implementing the designs, also developing custom
+                                solutions to address team necessities.
+                            </p>
+                            <ul class="flex flex-wrap justify-center text-xs">
+                                <li
+                                    class="bg-[#40484D] rounded-sm inline-block py-1 px-2 my-1 mx-[2px] text-[#abb2bf] text-center flex-grow"
+                                >
+                                    HTML5
+                                </li>
+                                <li
+                                    class="bg-[#40484D] rounded-sm inline-block py-1 px-2 my-1 mx-[2px] text-[#abb2bf] text-center flex-grow"
+                                >
+                                    CSS3
+                                </li>
+                                <li
+                                    class="bg-[#40484D] rounded-sm inline-block py-1 px-2 my-1 mx-[2px] text-[#abb2bf] text-center flex-grow"
+                                >
+                                    JavaScript
+                                </li>
+                                <li
+                                    class="bg-[#40484D] rounded-sm inline-block py-1 px-2 my-1 mx-[2px] text-[#abb2bf] text-center flex-grow"
+                                >
+                                    Wordpress
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- line -->
+                        <div class="inline-flex flex-col items-center gap-2">
+                            <div class="inline-flex flex-row items-center top-[165rem] left-[35.75rem]">
+                                <hr class="h-px w-[4.5rem] border-0 bg-[#ABB2BF]" />
+                                <div class="flex flex-col bg-[#2B343A]">
+                                    <svg width="30" height="30" viewBox="0 0 40 40">
+                                        <circle
+                                            cx="20"
+                                            cy="20"
+                                            r="10"
+                                            stroke="#c778dd"
+                                            stroke-width="4"
+                                            fill="#ffffff"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section id="about" class="flex flex-col items-center justify-center mt-[10rem]">
+            <!-- about container -->
+            <div class="container">
+                <!-- about title -->
+                <div class="flex flex-row items-center justify-between mx-[4.5rem] gap-4">
+                    <h2 class="text-2xl font-semibold text-white font-fira-code">
+                        <span class="text-[#c778dd]">#</span>About-Me
+                    </h2>
+                    <hr class="w-[87.1%] h-px border-0 bg-[#c778dd]" />
+                </div>
+                <!-- about content -->
+                <div class="flex flex-row items-center justify-between mx-[4.5rem] h-96 mt-10">
+                    <!-- left side -->
+                    <div class="flex items-center justify-start w-1/2">
+                        <img
+                            class="relative -right-14 w-[20.25rem] h-[20.25rem]"
+                            src="./assets/img/Sc.png"
+                            alt="illustration"
+                        />
+                        <hr class="flex absolute left-[11.5rem] top-[263.2rem] w-[20rem] h-px border-0 bg-[#c778dd]" />
+                    </div>
+                    <!-- right side -->
+                    <div class="flex flex-col w-1/2 gap-8">
+                        <p class="text-[#abb2bf] font-fira-code text-base font-normal leading-6">Hello, i’m Jamal!</p>
+                        <p class="text-[#abb2bf] font-fira-code text-base font-normal leading-6">
+                            I’m a self-taught front-end developer based in East java, Indonesia. I can develop
+                            responsive websites from scratch and raise them into modern user-friendly web experiences.
+                        </p>
+                        <p class="text-[#abb2bf] font-fira-code text-base font-normal leading-6">
+                            For over a year, I've been transforming my creativity and expertise into websites. I've been
+                            assisting many clients in establishing their web presence. I am always looking for new
+                            technologies and frameworks to learn about.
+                        </p>
+                    </div>
+                </div>
+                <!-- skill title -->
+                <div class="flex flex-row items-center justify-between mx-[4.5rem] gap-4 mt-[10rem]">
+                    <hr class="w-full h-px border-0 bg-[#c778dd]" />
+                    <h2 class="text-2xl font-semibold text-white font-fira-code">
+                        <span class="text-[#c778dd]">./</span>Skill
+                    </h2>
+                    <hr class="w-full h-px border-0 bg-[#c778dd]" />
+                </div>
+                <!-- skill content -->
+                <div class="flex flex-row items-center justify-between mx-[4.5rem] h-96 mt-10">
+                    <!-- left decoration side -->
+                    <div class="flex items-center justify-start w-1/3">
+                        <div class="relative -top-40 left-6">
+                            <svg
+                                width="63"
+                                height="63"
+                                viewBox="0 0 63 63"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <circle cx="2" cy="2" r="2" fill="#ABB2BF" />
+                                <circle cx="16.75" cy="2" r="2" fill="#ABB2BF" />
+                                <circle cx="31.5" cy="2" r="2" fill="#ABB2BF" />
+                                <circle cx="46.25" cy="2" r="2" fill="#ABB2BF" />
+                                <circle cx="61" cy="2" r="2" fill="#ABB2BF" />
+                                <circle cx="2" cy="16.75" r="2" fill="#ABB2BF" />
+                                <circle cx="16.75" cy="16.75" r="2" fill="#ABB2BF" />
+                                <circle cx="31.5" cy="16.75" r="2" fill="#ABB2BF" />
+                                <circle cx="46.25" cy="16.75" r="2" fill="#ABB2BF" />
+                                <circle cx="61" cy="16.75" r="2" fill="#ABB2BF" />
+                                <circle cx="2" cy="31.5" r="2" fill="#ABB2BF" />
+                                <circle cx="16.75" cy="31.5" r="2" fill="#ABB2BF" />
+                                <circle cx="31.5" cy="31.5" r="2" fill="#ABB2BF" />
+                                <circle cx="46.25" cy="31.5" r="2" fill="#ABB2BF" />
+                                <circle cx="61" cy="31.5" r="2" fill="#ABB2BF" />
+                                <circle cx="2" cy="46.25" r="2" fill="#ABB2BF" />
+                                <circle cx="16.75" cy="46.25" r="2" fill="#ABB2BF" />
+                                <circle cx="31.5" cy="46.25" r="2" fill="#ABB2BF" />
+                                <circle cx="46.25" cy="46.25" r="2" fill="#ABB2BF" />
+                                <circle cx="61" cy="46.25" r="2" fill="#ABB2BF" />
+                                <circle cx="2" cy="61" r="2" fill="#ABB2BF" />
+                                <circle cx="16.75" cy="61" r="2" fill="#ABB2BF" />
+                                <circle cx="31.5" cy="61" r="2" fill="#ABB2BF" />
+                                <circle cx="46.25" cy="61" r="2" fill="#ABB2BF" />
+                                <circle cx="61" cy="61" r="2" fill="#ABB2BF" />
+                            </svg>
+                        </div>
+                        <div class="relative left-28">
+                            <svg
+                                width="63"
+                                height="63"
+                                viewBox="0 0 63 63"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <circle cx="2" cy="2" r="2" fill="#ABB2BF" />
+                                <circle cx="16.75" cy="2" r="2" fill="#ABB2BF" />
+                                <circle cx="31.5" cy="2" r="2" fill="#ABB2BF" />
+                                <circle cx="46.25" cy="2" r="2" fill="#ABB2BF" />
+                                <circle cx="61" cy="2" r="2" fill="#ABB2BF" />
+                                <circle cx="2" cy="16.75" r="2" fill="#ABB2BF" />
+                                <circle cx="16.75" cy="16.75" r="2" fill="#ABB2BF" />
+                                <circle cx="31.5" cy="16.75" r="2" fill="#ABB2BF" />
+                                <circle cx="46.25" cy="16.75" r="2" fill="#ABB2BF" />
+                                <circle cx="61" cy="16.75" r="2" fill="#ABB2BF" />
+                                <circle cx="2" cy="31.5" r="2" fill="#ABB2BF" />
+                                <circle cx="16.75" cy="31.5" r="2" fill="#ABB2BF" />
+                                <circle cx="31.5" cy="31.5" r="2" fill="#ABB2BF" />
+                                <circle cx="46.25" cy="31.5" r="2" fill="#ABB2BF" />
+                                <circle cx="61" cy="31.5" r="2" fill="#ABB2BF" />
+                                <circle cx="2" cy="46.25" r="2" fill="#ABB2BF" />
+                                <circle cx="16.75" cy="46.25" r="2" fill="#ABB2BF" />
+                                <circle cx="31.5" cy="46.25" r="2" fill="#ABB2BF" />
+                                <circle cx="46.25" cy="46.25" r="2" fill="#ABB2BF" />
+                                <circle cx="61" cy="46.25" r="2" fill="#ABB2BF" />
+                                <circle cx="2" cy="61" r="2" fill="#ABB2BF" />
+                                <circle cx="16.75" cy="61" r="2" fill="#ABB2BF" />
+                                <circle cx="31.5" cy="61" r="2" fill="#ABB2BF" />
+                                <circle cx="46.25" cy="61" r="2" fill="#ABB2BF" />
+                                <circle cx="61" cy="61" r="2" fill="#ABB2BF" />
+                            </svg>
+                        </div>
+                        <div class="relative left-44 -bottom-[6.2rem]">
+                            <svg
+                                width="52"
+                                height="52"
+                                viewBox="0 0 52 52"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <rect x="0.5" y="0.5" width="51" height="51" stroke="#ABB2BF" />
+                            </svg>
+                        </div>
+                        <div class="relative left-12 bottom-40">
+                            <svg
+                                width="100"
+                                height="100"
+                                viewBox="0 0 100 100"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    x="0.5"
+                                    y="0.5"
+                                    width="85"
+                                    height="85"
+                                    stroke="#ABB2BF"
+                                    d="M0.581 0.581H99.419V99.419H0.581V0.581z"
+                                    stroke-width="1.1627906976744187"
+                                />
+                            </svg>
+                        </div>
+                        <div class="relative right-56 top-32">
+                            <svg
+                                width="100"
+                                height="100"
+                                viewBox="0 0 100 100"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    x="0.5"
+                                    y="0.5"
+                                    width="85"
+                                    height="85"
+                                    stroke="#ABB2BF"
+                                    d="M0.581 0.581H99.419V99.419H0.581V0.581z"
+                                    stroke-width="1.1627906976744187"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- right side -->
+                    <div class="flex flex-row-reverse w-2/3 mr-6">
+                        <div class="flex flex-col w-auto gap-4 ml-8">
+                            <div class="flex flex-col items-start w-1/2">
+                                <div class="w-52 border border-solid border-[#abb2bf] py-2">
+                                    <h5
+                                        class="px-2 mb-2 text-xl self-stretch font-semibold text-white font-fira-code border-b border-solid border-[#abb2bf] w-full"
+                                    >
+                                        Tools
+                                    </h5>
+                                    <div class="flex flex-wrap items-start w-full gap-2 p-2 font-fira-code">
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">VSCode</p>
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">Linux</p>
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">NPM</p>
+                                    </div>
+                                    <div class="flex flex-row items-start w-full gap-2 p-2 font-fira-code">
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">Figma</p>
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">Git</p>
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">Postman</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-start w-1/2">
+                                <div class="w-52 border border-solid border-[#abb2bf] py-2">
+                                    <h5
+                                        class="px-2 mb-2 text-xl self-stretch font-semibold text-white font-fira-code border-b border-solid border-[#abb2bf] w-full"
+                                    >
+                                        Frameworks
+                                    </h5>
+                                    <div class="flex flex-wrap items-start w-full gap-2 p-2 font-fira-code">
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">Vue</p>
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">React</p>
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">Nuxt</p>
+                                    </div>
+                                    <div class="flex flex-row items-start w-full gap-2 p-2 font-fira-code">
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">Express</p>
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">Bootstrap</p>
+                                    </div>
+                                    <div class="flex flex-row items-start w-full gap-2 p-2 font-fira-code">
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">Tailwind</p>
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">Hapi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-auto gap-4 ml-8">
+                            <div class="flex flex-col items-start w-1/2">
+                                <div class="w-52 border border-solid border-[#abb2bf] py-2">
+                                    <h5
+                                        class="px-2 mb-2 text-xl self-stretch font-semibold text-white font-fira-code border-b border-solid border-[#abb2bf] w-full"
+                                    >
+                                        Databases
+                                    </h5>
+                                    <div class="flex flex-wrap items-start w-full gap-2 p-2 font-fira-code">
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">MySQL</p>
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">PostgreSQL</p>
+                                    </div>
+                                    <div class="flex flex-row items-start w-full gap-2 p-2 font-fira-code">
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">Mongo</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-start w-1/2">
+                                <div class="w-52 border border-solid border-[#abb2bf] py-2">
+                                    <h5
+                                        class="px-2 mb-2 text-xl self-stretch font-semibold text-white font-fira-code border-b border-solid border-[#abb2bf] w-full"
+                                    >
+                                        Other
+                                    </h5>
+                                    <div class="flex flex-wrap items-start w-full gap-2 p-2 font-fira-code">
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">HTML</p>
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">CSS</p>
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">JS</p>
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">SCSS</p>
+                                    </div>
+                                    <div class="flex flex-row items-start w-full gap-2 p-2 font-fira-code">
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">REST</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-auto gap-4 ml-8">
+                            <div class="flex flex-col items-start w-1/2">
+                                <div class="w-52 border border-solid border-[#abb2bf] py-2">
+                                    <h5
+                                        class="px-2 mb-2 text-xl self-stretch font-semibold text-white font-fira-code border-b border-solid border-[#abb2bf] w-full"
+                                    >
+                                        Languages
+                                    </h5>
+                                    <div class="flex flex-wrap items-start w-full gap-2 p-2 font-fira-code">
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">JavaScript</p>
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">PHP</p>
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">TypeScript</p>
+                                        <p class="text-[#abb2bf] font-fira-code text-base font-normal">GO</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="flex flex-col items-center justify-center mt-10">
+            <!-- contact container -->
+            <div class="container">
+                <!-- decoration -->
+                <!-- contact title -->
+                <div class="flex flex-row items-center justify-between mx-[4.5rem] gap-4">
+                    <h2 class="text-2xl font-semibold text-white font-fira-code">
+                        <span class="text-[#c778dd]">#</span>Contacts
+                    </h2>
+                    <hr class="w-full h-px border-0 bg-[#c778dd]" />
+                </div>
+                <!-- contact content -->
+                <div class="flex flex-row items-center justify-between mx-[4.5rem] mt-10 h-[25rem]">
+                    <!-- left side -->
+                    <div class="flex items-center justify-start w-1/2">
+                        <p class="text-[#abb2bf] font-fira-code text-base font-medium mr-6">
+                            I’m interested in freelance opportunities. However, if you have other request or question,
+                            don’t hesitate to contact me through social media or drop me a message in form contact!
+                        </p>
+                    </div>
+                    <!-- right side -->
+                    <div class="flex items-center justify-start w-1/2">
+                        <div class="flex items-center justify-end w-full">
+                            <form action="" method="" class="flex flex-col w-full">
+                                <div class="flex flex-col items-start w-full gap-4 p-8">
+                                    <div class="flex flex-row items-start w-full gap-4">
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            id="name"
+                                            placeholder="Name"
+                                            class="w-1/2 p-2 border border-solid border-[#abb2bf] bg-inherit outline-none text-[#abb2bf]"
+                                            required
+                                        />
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            id="email"
+                                            placeholder="Email"
+                                            class="w-1/2 p-2 border border-solid border-[#abb2bf] bg-inherit outline-none text-[#abb2bf]"
+                                            required
+                                        />
+                                    </div>
+                                    <input
+                                        type="text"
+                                        name="title"
+                                        id="title"
+                                        placeholder="Title"
+                                        class="w-full p-2 border border-solid border-[#abb2bf] bg-inherit outline-none text-[#abb2bf]"
+                                    />
+                                    <textarea
+                                        name="message"
+                                        id=""
+                                        cols="15"
+                                        rows="5"
+                                        placeholder="Message"
+                                        class="w-full p-2 border border-solid border-[#abb2bf] bg-inherit outline-none text-[#abb2bf]"
+                                    ></textarea>
+                                    <button
+                                        type="submit"
+                                        class="py-2 px-4 border border-solid border-[#C778DD] text-white font-fira-code"
+                                    >
+                                        Send
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="flex flex-row items-center justify-center mt-12 mb-4 border-t border-solid border-[#abb2bf]">
+            <div class="container">
+                <div class="flex flex-col items-center justify-between mx-[4.5rem] gap-12 mt-8">
+                    <div class="flex justify-between w-full">
+                        <!-- elias -->
+                        <div class="flex flex-col items-start justify-center gap-6">
+                            <div class="flex flex-row items-center justify-start gap-6">
+                                <div class="flex flex-row items-center justify-start">
+                                    <img src="./assets/img/favicon-32x32.png" alt="" class="w-6 h-6" />
+                                    <p class="text-white font-fira-code">Jamal</p>
+                                </div>
+                                <p class="text-[#abb2bf] font-fira-code text-base font-medium">axell.my.id</p>
+                            </div>
+                            <p class="text-[#abb2bf] font-fira-code text-base font-medium">
+                                Web designer and front-end developer
+                            </p>
+                        </div>
+                        <!-- media -->
+                        <div class="flex flex-col items-center justify-center gap-3">
+                            <h5 class="text-[#abb2bf] font-fira-code text-base font-medium">Media</h5>
+                            <div class="flex flex-row items-center justify-center">
+                                <a href=""
+                                    ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="32"
+                                        height="32"
+                                        viewBox="0 0 32 32"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M15.5 6C9.69875 6 5 10.5882 5 16.2529C5 20.7899 8.00562 24.6219 12.1794 25.9804C12.7044 26.0701 12.9012 25.7625 12.9012 25.4934C12.9012 25.2499 12.8881 24.4425 12.8881 23.5838C10.25 24.058 9.5675 22.9558 9.3575 22.3791C9.23938 22.0843 8.7275 21.1743 8.28125 20.9308C7.91375 20.7386 7.38875 20.2644 8.26813 20.2516C9.095 20.2388 9.68563 20.9949 9.8825 21.3025C10.8275 22.8533 12.3369 22.4175 12.9406 22.1484C13.0325 21.4819 13.3081 21.0334 13.61 20.777C11.2737 20.5207 8.8325 19.6364 8.8325 15.7147C8.8325 14.5997 9.23938 13.6769 9.90875 12.9592C9.80375 12.7029 9.43625 11.6519 10.0138 10.2422C10.0138 10.2422 10.8931 9.97301 12.9012 11.2931C13.7413 11.0624 14.6338 10.947 15.5263 10.947C16.4188 10.947 17.3113 11.0624 18.1513 11.2931C20.1594 9.9602 21.0387 10.2422 21.0387 10.2422C21.6163 11.6519 21.2488 12.7029 21.1438 12.9592C21.8131 13.6769 22.22 14.5868 22.22 15.7147C22.22 19.6492 19.7656 20.5207 17.4294 20.777C17.81 21.0975 18.1381 21.7126 18.1381 22.6738C18.1381 24.0452 18.125 25.1474 18.125 25.4934C18.125 25.7625 18.3219 26.0829 18.8469 25.9804C20.9314 25.2935 22.7428 23.9854 24.026 22.2403C25.3092 20.4953 25.9996 18.4012 26 16.2529C26 10.5882 21.3013 6 15.5 6Z"
+                                            fill="#ABB2BF"
+                                        /></svg
+                                ></a>
+                                <a href=""
+                                    ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="32"
+                                        height="32"
+                                        viewBox="0 0 32 32"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M15.5 6C9.69875 6 5 10.5882 5 16.2529C5 20.7899 8.00562 24.6219 12.1794 25.9804C12.7044 26.0701 12.9012 25.7625 12.9012 25.4934C12.9012 25.2499 12.8881 24.4425 12.8881 23.5838C10.25 24.058 9.5675 22.9558 9.3575 22.3791C9.23938 22.0843 8.7275 21.1743 8.28125 20.9308C7.91375 20.7386 7.38875 20.2644 8.26813 20.2516C9.095 20.2388 9.68563 20.9949 9.8825 21.3025C10.8275 22.8533 12.3369 22.4175 12.9406 22.1484C13.0325 21.4819 13.3081 21.0334 13.61 20.777C11.2737 20.5207 8.8325 19.6364 8.8325 15.7147C8.8325 14.5997 9.23938 13.6769 9.90875 12.9592C9.80375 12.7029 9.43625 11.6519 10.0138 10.2422C10.0138 10.2422 10.8931 9.97301 12.9012 11.2931C13.7413 11.0624 14.6338 10.947 15.5263 10.947C16.4188 10.947 17.3113 11.0624 18.1513 11.2931C20.1594 9.9602 21.0387 10.2422 21.0387 10.2422C21.6163 11.6519 21.2488 12.7029 21.1438 12.9592C21.8131 13.6769 22.22 14.5868 22.22 15.7147C22.22 19.6492 19.7656 20.5207 17.4294 20.777C17.81 21.0975 18.1381 21.7126 18.1381 22.6738C18.1381 24.0452 18.125 25.1474 18.125 25.4934C18.125 25.7625 18.3219 26.0829 18.8469 25.9804C20.9314 25.2935 22.7428 23.9854 24.026 22.2403C25.3092 20.4953 25.9996 18.4012 26 16.2529C26 10.5882 21.3013 6 15.5 6Z"
+                                            fill="#ABB2BF"
+                                        /></svg
+                                ></a>
+                                <a href=""
+                                    ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="32"
+                                        height="32"
+                                        viewBox="0 0 32 32"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M15.5 6C9.69875 6 5 10.5882 5 16.2529C5 20.7899 8.00562 24.6219 12.1794 25.9804C12.7044 26.0701 12.9012 25.7625 12.9012 25.4934C12.9012 25.2499 12.8881 24.4425 12.8881 23.5838C10.25 24.058 9.5675 22.9558 9.3575 22.3791C9.23938 22.0843 8.7275 21.1743 8.28125 20.9308C7.91375 20.7386 7.38875 20.2644 8.26813 20.2516C9.095 20.2388 9.68563 20.9949 9.8825 21.3025C10.8275 22.8533 12.3369 22.4175 12.9406 22.1484C13.0325 21.4819 13.3081 21.0334 13.61 20.777C11.2737 20.5207 8.8325 19.6364 8.8325 15.7147C8.8325 14.5997 9.23938 13.6769 9.90875 12.9592C9.80375 12.7029 9.43625 11.6519 10.0138 10.2422C10.0138 10.2422 10.8931 9.97301 12.9012 11.2931C13.7413 11.0624 14.6338 10.947 15.5263 10.947C16.4188 10.947 17.3113 11.0624 18.1513 11.2931C20.1594 9.9602 21.0387 10.2422 21.0387 10.2422C21.6163 11.6519 21.2488 12.7029 21.1438 12.9592C21.8131 13.6769 22.22 14.5868 22.22 15.7147C22.22 19.6492 19.7656 20.5207 17.4294 20.777C17.81 21.0975 18.1381 21.7126 18.1381 22.6738C18.1381 24.0452 18.125 25.1474 18.125 25.4934C18.125 25.7625 18.3219 26.0829 18.8469 25.9804C20.9314 25.2935 22.7428 23.9854 24.026 22.2403C25.3092 20.4953 25.9996 18.4012 26 16.2529C26 10.5882 21.3013 6 15.5 6Z"
+                                            fill="#ABB2BF"
+                                        /></svg
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-[#abb2bf] font-fira-code text-base font-medium">© Copyright 2023. Made by Jamal</p>
+                </div>
+            </div>
+        </footer>
     </body>
-    <footer>
-        <audio controls loop autoplay>
-            <source src="/assets/audio/Rain.mp3" type="audio/mpeg" />
-        </audio>
-    </footer>
 </html>
